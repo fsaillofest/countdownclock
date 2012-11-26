@@ -1,0 +1,21 @@
+/* The .clock div. Created dynamically by jQuery */
+.clock{ width:100%; position:relative; overflow:hidden;}
+/* There are two .rotate divs - one for each half of the background */
+.clock .rotate{ width:100%; height:100%; position:absolute;	top:0; left:0;}
+.rotate.right{ display:none; z-index:11;}
+.clock .front{width:50%; height:100%; position:absolute; top:0;}
+.clock .bg{ width:100%; height:100%;}
+/* Holds the number counting down */
+.clock .display{ 
+	width:100%; position:absolute; top:33%; left:0; z-index:20;
+	/*font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;*/ text-align:center;
+	/* CSS3 text shadow: */
+	text-shadow:4px 4px 5px #333333;
+}
+.clock .front.left{ left:0; z-index:10;}
+/* The left part of the background: */
+.clock .bg.left{ left:0; }
+.timer .bg.left{ background-image: url(img/bg_timer_left.png); background-repeat: no-repeat; background-size: contain;}
+/* The right part of the background: */
+.clock .bg.right{ left:50%; }
+.timer .bg.right{ background-image: url(img/bg_timer_right.png); background-repeat: no-repeat; background-size: contain;}
